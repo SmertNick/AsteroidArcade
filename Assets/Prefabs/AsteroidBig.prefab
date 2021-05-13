@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6036459908714010914}
   - component: {fileID: 7718803039342006547}
   - component: {fileID: 2167764703583037546}
+  - component: {fileID: 7765432041637673231}
   m_Layer: 8
   m_Name: AsteroidBig
   m_TagString: Untagged
@@ -155,3 +156,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 44373da860a49e24ba436c9a3dab641e, type: 2}
+--- !u!114 &7765432041637673231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2918587335541106328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf99e18f42e0ba4695428a86e3dbe12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splitsInTo: {fileID: 720186412903677405, guid: 6af7f775e13f5174fa6d514826b8fe77, type: 3}
+  spawnOffset: 0.3
