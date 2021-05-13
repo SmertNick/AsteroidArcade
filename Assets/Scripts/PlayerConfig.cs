@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Player Config.asset", menuName = "Asteroid Game/PlayerConfig")]
+[CreateAssetMenu(fileName = "Player Config.asset", menuName = "Asteroid Game/Player Config")]
 public class PlayerConfig : ScriptableObject
 {
     // In case we want to change players color

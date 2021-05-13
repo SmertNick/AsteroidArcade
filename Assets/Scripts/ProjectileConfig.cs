@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Projectile config.asset", menuName = "Asteroid Game/Projectile config")]
+[CreateAssetMenu(fileName = "Projectile config.asset", menuName = "Asteroid Game/Projectile Config")]
 public class ProjectileConfig : ScriptableObject
 {
     [SerializeField] private float speed = 300f;
