@@ -93,14 +93,4 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(config.FireCooldownTime);
         fireIsOnCooldown = false;
     }
-
-    public void Hit()
-    {
-        
-    }
-    
-    public void Edged(Vector3 newPosition)
-    {
-        playerTransform.position = newPosition;
-    }
 }
