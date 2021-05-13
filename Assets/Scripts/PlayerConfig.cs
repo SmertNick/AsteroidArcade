@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerConfig : MonoBehaviour
+[CreateAssetMenu(fileName = "Player Config.asset", menuName = "Asteroid Game/PlayerConfig")]
+public class PlayerConfig : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // In case we want to change players color
+    [SerializeField] private Color playerColor = Color.white;
+    public Color PlayerColor => playerColor;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private int maxLives = 3;
+    public int MaxLives => maxLives;
+
+    [SerializeField] private float acceleration = 1f;
+    public float Acceleration => acceleration;
+
+    [SerializeField] private float maxSpeed = 20f;
+    public float MaxSpeed => maxSpeed;
+
+    [SerializeField] private float rotationSpeed = 300f;
+    public float RotationSpeed => rotationSpeed;
+
+    [SerializeField] private float fireCooldownTime = 1f;
+    public float FireCooldownTime => fireCooldownTime;
+
+    // Bullet prefab from which object pool will be generated
+    [SerializeField] private GameObject bulletPrefab;
+    public GameObject BulletPrefab => bulletPrefab;
+
+    // Amount of objects in the pool
+    [SerializeField] private int bulletsToGenerate = 20;
+    public int BulletsToGenerate => bulletsToGenerate;
 }
