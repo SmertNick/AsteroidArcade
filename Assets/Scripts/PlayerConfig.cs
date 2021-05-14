@@ -29,6 +29,9 @@ public class PlayerConfig : ScriptableObject
     [SerializeField] private GameObject bulletPrefab;
     public GameObject BulletPrefab => bulletPrefab;
 
+    [SerializeField] private AudioClip shootingSound;
+    public AudioClip ShootingSound => shootingSound;
+    
     // Amount of objects in the pool
     [SerializeField] private int bulletsToGenerate = 20;
     public int BulletsToGenerate => bulletsToGenerate;

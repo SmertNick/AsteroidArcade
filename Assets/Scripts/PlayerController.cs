@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
             bullet.transform.position = bulletSpawnPosition.position;
             bullet.transform.rotation = playerTransform.rotation;
             bullet.SetActive(true);
+            Events.PlayFX(config.ShootingSound);
             return;
         }
     }

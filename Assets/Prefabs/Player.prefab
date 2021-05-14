@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8371881067791811737}
   - component: {fileID: 4132358088371639871}
   - component: {fileID: 3095513026817758420}
+  - component: {fileID: -1877630851890668427}
+  - component: {fileID: -4034970598681693909}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -152,6 +154,31 @@ PolygonCollider2D:
       - {x: 0.02372379, y: -0.07002711}
       - {x: -0.30308577, y: -0.2793224}
       - {x: -0.3626485, y: -0.28433788}
+--- !u!114 &-1877630851890668427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485693515123473174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8130af1e797974294bf9d2f95bc3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSound: {fileID: 8300000, guid: 1399f746b21e6ab4a86be95b31fbde8b, type: 3}
+--- !u!114 &-4034970598681693909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485693515123473174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e84dbd2a4564a44a91552432c6fdae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5948660143334743898
 GameObject:
   m_ObjectHideFlags: 0

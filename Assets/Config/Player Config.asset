@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerColor: {r: 1, g: 1, b: 1, a: 1}
   maxLives: 3
+  immunityTime: 2
   acceleration: 1
   maxSpeed: 20
   rotationSpeed: 300
   fireCooldownTime: 0.5
   bulletPrefab: {fileID: 4489924927449457156, guid: 610ac47748bd48843b6be5a5a3f00046, type: 3}
+  shootingSound: {fileID: 8300000, guid: bbc7eaa52f193614dae0a6b813bb0aef, type: 3}
   bulletsToGenerate: 10
