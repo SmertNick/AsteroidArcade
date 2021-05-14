@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Reference to player stats
-    [SerializeField] private PlayerConfig config;
+    [SerializeField] public PlayerConfig config;
     // Bullet pool
     private readonly List<GameObject> bullets = new List<GameObject>();
     // Where to spawn bullets when shooting
