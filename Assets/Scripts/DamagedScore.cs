@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DamagedScore : MonoBehaviour
+public class DamagedScore : MonoBehaviour, IDamaged
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Text scoreText;
+    
+    public void Damaged()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // TODO update score
     }
 }

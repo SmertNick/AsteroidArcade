@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7789978607406327352}
   - component: {fileID: 4818311869724032138}
   - component: {fileID: 4853687467661972540}
+  - component: {fileID: -2205158338900897728}
   m_Layer: 8
   m_Name: AsteroidSmall
   m_TagString: Untagged
@@ -152,3 +153,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 1367ab572c2de2b4aa24858606f1a3ea, type: 2}
+--- !u!114 &-2205158338900897728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522955930601703415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55b72343b649484390ed9fb8a01784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSound: {fileID: 8300000, guid: 29cda1a5ac6764e428410d5fb399cbf8, type: 3}

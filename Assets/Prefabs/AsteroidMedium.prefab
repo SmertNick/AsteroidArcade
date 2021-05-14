@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 905931011225826990}
   - component: {fileID: 2059523327720260214}
   - component: {fileID: 9074969649607310795}
+  - component: {fileID: -5864810515095814627}
   m_Layer: 8
   m_Name: AsteroidMedium
   m_TagString: Untagged
@@ -168,3 +169,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splitsInTo: {fileID: 522955930601703415, guid: 48a07f97832b06e4da0d351a085ce629, type: 3}
   spawnOffset: 0.3
+--- !u!114 &-5864810515095814627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720186412903677405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55b72343b649484390ed9fb8a01784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSound: {fileID: 8300000, guid: 29cda1a5ac6764e428410d5fb399cbf8, type: 3}
