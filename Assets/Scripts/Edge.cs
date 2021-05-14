@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+public enum Orientation {Horizontal = 0, Vertical = 1}
 public class Edge : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Orientation orientation;
+    private Vector3 limit;
+
+    private void Awake()
     {
-        
+        limit = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay2D(Collider2D other)
     {
+        var otherPosition = other.transform.position;
+        var x = otherPosition.x;
+        var y = otherPosition.y;
         
+        if ((int)orientation == 0 && Mathf.Abs(y) > Mathf.Abs(limit.y))
+        {
+            other.transform.position = new Vector3(x, -limit.y-Mathf.Epsilon, 0f);
+        }
+
+        if ((int) orientation == 1 && Mathf.Abs(x) > Mathf.Abs(limit.x))
+        {
+            other.transform.position = new Vector3(-limit.x - Mathf.Epsilon, y, 0f);
+        }
     }
 }
