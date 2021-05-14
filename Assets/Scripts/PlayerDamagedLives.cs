@@ -17,7 +17,7 @@ public class PlayerDamagedLives : MonoBehaviour, IPlayer
         Events.ChangeLives(livesRemaining);
         if (livesRemaining < 0)
         {
-            // TODO Death state
+            // TODO Handle Death state.
         }
     }
 }
