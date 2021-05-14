@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using UnityEngine;
 
@@ -16,6 +17,11 @@ public class PlayerController : MonoBehaviour
     // For player input
     private float forward = 0f, turn = 0f;
     private bool fireIsOnCooldown = false;
+    
+    // Temporary immunity after getting hit
+    private bool isImmune = false;
+    // OnDamage effects
+    private IPlayer[] effects;
 
     // Component references
     private Rigidbody2D body;
@@ -26,6 +32,7 @@ public class PlayerController : MonoBehaviour
         // Cashing references
         body = GetComponent<Rigidbody2D>();
         playerTransform = GetComponent<Transform>();
+        effects = GetComponents<IPlayer>();
     }
 
     private void Start()
@@ -92,5 +99,27 @@ public class PlayerController : MonoBehaviour
         // Enabling firing after cooldown has passed
         yield return new WaitForSeconds(config.FireCooldownTime);
         fireIsOnCooldown = false;
+    }
+
+    public void Damage()
+    {
+        // If recently took damage - do nothing
+        if (isImmune) return;
+        // Else turn on immunity
+        StartCoroutine(Immunity());
+        // Get all onDamage effects
+        if (effects == null) return;
+        // Trigger them
+        foreach (var effect in effects)
+        {
+            effect.Damaged();
+        }
+    }
+
+    private IEnumerator Immunity()
+    {
+        isImmune = true;
+        yield return new WaitForSeconds(config.ImmunityTime);
+        isImmune = false;
     }
 }

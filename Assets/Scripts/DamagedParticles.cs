@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagedParticles : MonoBehaviour
+public class DamagedParticles : MonoBehaviour, IDamaged
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject particlesPrefab;
+    
+    public void Damaged()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // TODO emmit particles
     }
 }

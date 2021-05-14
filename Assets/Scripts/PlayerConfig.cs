@@ -10,6 +10,9 @@ public class PlayerConfig : ScriptableObject
     [SerializeField] private int maxLives = 3;
     public int MaxLives => maxLives;
 
+    [SerializeField] private float immunityTime = 2f;
+    public float ImmunityTime => immunityTime;
+
     [SerializeField] private float acceleration = 1f;
     public float Acceleration => acceleration;
 

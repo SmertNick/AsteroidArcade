@@ -25,7 +25,8 @@ public class Asteroid : MonoBehaviour
         // Dealing with hit
         var player = other.collider.GetComponent<PlayerController>();
         if (player == null) return;
-        // TODO If we hit player do smth bad
+        // If we hit player do something bad
+        player.Damage();
         // Destroying
         Destroy(gameObject);
     }

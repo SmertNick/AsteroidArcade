@@ -183,4 +183,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b72343b649484390ed9fb8a01784f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aud: {fileID: 5494703882505120942, guid: 91369ef48935e8b4ca8acc03bc7a93e7, type: 3}
   explosionSound: {fileID: 8300000, guid: 29cda1a5ac6764e428410d5fb399cbf8, type: 3}

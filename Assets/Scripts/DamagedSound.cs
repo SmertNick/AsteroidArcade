@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagedSound : MonoBehaviour
+public class DamagedSound : MonoBehaviour, IDamaged
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource aud;
+    [SerializeField] private AudioClip explosionSound;
 
-    // Update is called once per frame
-    void Update()
+    public void Damaged()
     {
-        
+        // Play sound
+        AudioSource.PlayClipAtPoint(explosionSound, new Vector3(0f, 0f, -25f), 1f);
     }
 }
