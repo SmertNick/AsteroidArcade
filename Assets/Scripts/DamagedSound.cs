@@ -7,6 +7,6 @@ public class DamagedSound : MonoBehaviour, IDamaged
     public void Damaged()
     {
         // Play sound
-        AudioSource.PlayClipAtPoint(explosionSound, new Vector3(0f, 0f, -25f), 1f);
+        Events.PlayFX(explosionSound);
     }
 }
