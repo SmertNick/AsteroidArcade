@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class DamagedSound : MonoBehaviour, IDamaged
 {
-    [SerializeField] private AudioSource aud;
     [SerializeField] private AudioClip explosionSound;
 
     public void Damaged()
