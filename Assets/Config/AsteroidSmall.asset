@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d35b5877915b4214dae11bfc5031dfce, type: 3}
-  m_Name: AsteroidMedium
+  m_Name: AsteroidSmall
   m_EditorClassIdentifier: 
-  speed: 75
-  scorePoints: 100
+  speed: 85
+  scorePoints: 50

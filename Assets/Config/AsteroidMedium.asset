@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d35b5877915b4214dae11bfc5031dfce, type: 3}
   m_Name: AsteroidMedium
   m_EditorClassIdentifier: 
-  speed: 75
+  speed: 60
   scorePoints: 100
