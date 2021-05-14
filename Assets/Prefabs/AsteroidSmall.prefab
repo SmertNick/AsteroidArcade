@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4818311869724032138}
   - component: {fileID: 4853687467661972540}
   - component: {fileID: -2205158338900897728}
+  - component: {fileID: 4024539377224515006}
   m_Layer: 8
   m_Name: AsteroidSmall
   m_TagString: Untagged
@@ -166,3 +167,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionSound: {fileID: 8300000, guid: 874ebc59b8e685544b6412467e1594fb, type: 3}
+--- !u!114 &4024539377224515006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522955930601703415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a72b1380b9386c43a06e6183bc7aeb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

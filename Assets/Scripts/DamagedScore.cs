@@ -1,12 +1,16 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DamagedScore : MonoBehaviour, IDamaged
 {
-    [SerializeField] private Text scoreText;
-    
+    private int score;
+    private void Start()
+    {
+        score = GetComponent<Asteroid>().config.ScorePoints;
+    }
+
     public void Damaged()
     {
-        // TODO update score
+        // Update score
+        Events.AddScore(score);
     }
 }
