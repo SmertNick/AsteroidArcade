@@ -1,4 +1,6 @@
 # AsteroidArcade
+This is a prototype, made in 4-ish hours.
+
 Code is pretty thorougly documented
 
 PlayerController, Projectile - main player behaviour
